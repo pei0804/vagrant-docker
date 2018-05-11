@@ -18,3 +18,12 @@ $ vagrant vbguest --status
 GuestAdditions 5.0.16 running --- OK.
 $ vagrant reload
 ```
+
+## DockerHost
+
+```console
+sudo groupadd docker
+sudo gpasswd -a $USER docker
+sudo systemctl restart docker
+exit
+```
